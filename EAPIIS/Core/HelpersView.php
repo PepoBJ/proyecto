@@ -72,7 +72,7 @@
             $domainName    = $_SERVER['HTTP_HOST'].'/';
             $host_protocol = $protocol.$domainName;
 
-            return '<link rel="shortcut icon" href="' . $host_protocol . 'proyecto/public/favicon.ico" />
+            return '<link rel="shortcut icon" href="' . $host_protocol . 'proyecto-master/public/favicon.ico" />
             <link rel="icon" type="image/png" href="' . $host_protocol . 'img/logo.png" />';
         }
         
