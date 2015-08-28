@@ -41,8 +41,7 @@ CREATE TABLE IF NOT EXISTS `alumno` (
 
 INSERT INTO `alumno` (`codigo`, `nombre`, `apellidos`, `dni`) VALUES
 ('112143', 'Robert ', 'Huaman Caceres', '71960340'),
-('112145', 'Nilto', 'Hurtado Mendoza', '71960341'),
-('Undefi', 'Undefined', 'Undefined', 'Undefine');
+('112145', 'Nilto', 'Hurtado Mendoza', '71960341');
 
 -- --------------------------------------------------------
 
