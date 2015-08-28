@@ -46,7 +46,13 @@
 					<label class="item__formulario" for="dia">Día: </label>					
 				</div>
 				<div class="caja">
-					<input type="number" id="dia" name="dia" min="1" max="5" class="item__formulario" required>	
+					<select name="dia" class="item__formulario" id="dia">
+						<option value="1">Lunes</option>
+						<option value="1">Martes</option>
+						<option value="1">Miercoles</option>
+						<option value="1">Jueves</option>
+						<option value="1">Viernes</option>
+					</select>
 				</div>
 				<div class="caja">
 					<label class="item__formulario" for="hora">Hora: </label>
