@@ -109,6 +109,9 @@
 	text-decoration: none;
 }
 
+#formulario {
+	margin: 2em 0;
+}
 
 #formulario .formulario__titulo {
 	line-height: 2;
@@ -116,4 +119,41 @@
 	text-transform: uppercase;
 	font-size: 1em;
 	margin: 2em 0;
+}
+
+#formulario label.item__formulario {
+	font-weight: bold;
+}
+#formulario .item__formulario {
+	margin: .5em 0;
+}
+
+#formulario .enviar {
+	padding: .5em;
+	font-weight: bold;
+	margin-top: .8em;
+	cursor: pointer;
+}
+
+#formulario form {
+	text-align: center;
+}
+
+
+#alumnos {
+	margin-top: 5em;
+}
+.alumno.caption {
+	margin-bottom: 1em;
+}
+.alumno.caption .grupo {
+	font-weight: bold;
+	border-bottom: 1px solid rgba(0,0,0,.3);
+	border-top: 1px solid rgba(0,0,0,.3);
+	line-height: 2;
+	text-transform: uppercase;
+}
+
+.alumno {
+	line-height: 2;
 }

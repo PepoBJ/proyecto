@@ -10,7 +10,16 @@
 		
 		public function gestion()
 		{
-			die('hola');
+			if( $_POST != null && isset($_POST))
+			{
+				CM::save($_POST['codigo'], $_POST['nombre'], $_POST['creditos'], $_POST['dni']);
+			}
+
+			$data = array(
+				"alumnos" => CM::all()
+			);
+
+			$this->view('Curso', $data);
 		}
 		
 		/*	**	*/

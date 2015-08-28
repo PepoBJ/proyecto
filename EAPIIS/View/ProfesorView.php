@@ -20,13 +20,13 @@
 			<form action="<?=$helper->url('alumno','gestion')?>" method="POST">
 			<div class="grupo">
 				<div class="caja">
-					<h3 class="formulario__titulo centrar-contenido">Registro Alumno</h3>
+					<h3 class="formulario__titulo centrar-contenido">Registro Profesor</h3>
 				</div>
 				<div class="caja">
-					<label class="item__formulario" for="codigo">Codigo: </label>					
+					<label class="item__formulario" for="dni">DNI: </label>
 				</div>
 				<div class="caja">
-					<input type="text" id="codigo" name="codigo" maxlength="6" minlength="6" class="item__formulario" required>	
+					<input type="text" id="dni" name="dni" maxlength="8" minlength="8" class="item__formulario" required>	
 				</div>
 				<div class="caja">
 					<label class="item__formulario" for="nombre">Nombre: </label>
@@ -39,13 +39,13 @@
 				</div>
 				<div class="caja">
 					<input type="text" id="apellidos" name="apellidos" class="item__formulario" required>	
+				</div>	
+				<div class="caja">
+					<label class="item__formulario" for="celular">Celular: </label>					
 				</div>
 				<div class="caja">
-					<label class="item__formulario" for="dni">DNI: </label>
-				</div>
-				<div class="caja">
-					<input type="text" id="dni" name="dni" maxlength="8" minlength="8" class="item__formulario" required>	
-				</div>
+					<input type="text" id="celular" name="celular" maxlength="9" minlength="9" class="item__formulario" required>	
+				</div>			
 				<div class="caja">
 					<input class="enviar" type="submit" value="Insertar">
 				</div>
@@ -56,19 +56,19 @@
 		<section id="alumnos">
 			<article class="alumno caption">
 				<div class="grupo">
-					<div class="caja centrar-contenido tablet-25">Codigo</div>
+					<div class="caja centrar-contenido tablet-25">Dni</div>
 					<div class="caja centrar-contenido tablet-25">Nombre</div>
 					<div class="caja centrar-contenido tablet-25">Apellido</div>
-					<div class="caja centrar-contenido tablet-25">Dni</div>
+					<div class="caja centrar-contenido tablet-25">Celular</div>
 				</div>
 			</article>
 			<?php foreach($alumnos as $alumno) :?>
 				<article class="alumno">
 					<div class="grupo">
-						<div class="caja tablet-25"><?=$alumno->getCodigo()?></div>
+						<div class="caja tablet-25"><?=$alumno->getDni()?></div>
 						<div class="caja tablet-25"><?=$alumno->getNombre()?></div>
 						<div class="caja tablet-25"><?=$alumno->getApellidos()?></div>
-						<div class="caja tablet-25"><?=$alumno->getDni()?></div>
+						<div class="caja tablet-25"><?=$alumno->getCelular()?></div>
 					</div>
 				</article>
 			<?php endforeach; ?>
