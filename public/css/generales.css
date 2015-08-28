@@ -12,9 +12,13 @@
 	font-weight: 800;
 
 }
+#cabezera h1 a {
+	color: #000;
+	text-decoration: none;
+	cursor: pointer;
+}
 
 #cabezera h1 span {
-	cursor: default;
 }
 
 #cabezera h1 span:first-child {

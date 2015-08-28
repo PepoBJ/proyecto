@@ -29,7 +29,7 @@
             return '<header id="cabezera">
                 <div class="grupo">
                     <div class="caja centrar-contenido">
-                        <h1><span>GESTIÓN</span> <span>ACADÉMICA</span></h1>
+                        <h1><a href="'.$this->url().'"><span>GESTIÓN</span> <span>ACADÉMICA</span></a></h1>
                     </div>
                 </div>
             </header>
