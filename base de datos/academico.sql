@@ -3,7 +3,7 @@
 -- http://www.phpmyadmin.net
 --
 -- Servidor: 127.0.0.1
--- Tiempo de generación: 28-08-2015 a las 07:00:43
+-- Tiempo de generación: 28-08-2015 a las 07:54:58
 -- Versión del servidor: 5.6.20
 -- Versión de PHP: 5.5.15
 
@@ -39,7 +39,8 @@ CREATE TABLE IF NOT EXISTS `alumno` (
 
 INSERT INTO `alumno` (`codigo`, `nombre`, `apellidos`, `dni`) VALUES
 ('112143', 'Robert ', 'Huaman Caceres', '71960340'),
-('112145', 'Nilto', 'Hurtado Mendoza', '71960341');
+('112145', 'Nilto', 'Hurtado Mendoza', '71960341'),
+('Undefi', 'Undefined', 'Undefined', 'Undefine');
 
 -- --------------------------------------------------------
 
@@ -60,7 +61,8 @@ CREATE TABLE IF NOT EXISTS `curso` (
 
 INSERT INTO `curso` (`codigo`, `nombre`, `creditos`, `profesor`) VALUES
 ('C00001', 'Matematicas discretas', 3, '71960340'),
-('C00002', 'Emsamblaje', 3, '71960340');
+('C00002', 'Emsamblaje', 3, '71960340'),
+('C00003', 'Mecanografia', 3, '71960340');
 
 -- --------------------------------------------------------
 
@@ -81,7 +83,8 @@ CREATE TABLE IF NOT EXISTS `horario` (
 --
 
 INSERT INTO `horario` (`dia`, `hora`, `aula`, `curso`, `profesor`) VALUES
-(1, 7, 204, 'C00001', '71960340');
+(1, 7, 204, 'C00001', '71960340'),
+(5, 15, 105, 'C00003', '71960340');
 
 -- --------------------------------------------------------
 
@@ -93,7 +96,7 @@ CREATE TABLE IF NOT EXISTS `matricula` (
 `id_matricula` int(11) NOT NULL,
   `curso` char(6) NOT NULL,
   `alumno` char(6) NOT NULL
-) ENGINE=InnoDB  DEFAULT CHARSET=latin1 AUTO_INCREMENT=14 ;
+) ENGINE=InnoDB  DEFAULT CHARSET=latin1 AUTO_INCREMENT=15 ;
 
 --
 -- Volcado de datos para la tabla `matricula`
@@ -101,7 +104,8 @@ CREATE TABLE IF NOT EXISTS `matricula` (
 
 INSERT INTO `matricula` (`id_matricula`, `curso`, `alumno`) VALUES
 (12, 'C00002', '112143'),
-(13, 'C00001', '112143');
+(13, 'C00001', '112143'),
+(14, 'C00003', '112145');
 
 -- --------------------------------------------------------
 
@@ -165,7 +169,7 @@ ALTER TABLE `profesor`
 -- AUTO_INCREMENT de la tabla `matricula`
 --
 ALTER TABLE `matricula`
-MODIFY `id_matricula` int(11) NOT NULL AUTO_INCREMENT,AUTO_INCREMENT=14;
+MODIFY `id_matricula` int(11) NOT NULL AUTO_INCREMENT,AUTO_INCREMENT=15;
 --
 -- Restricciones para tablas volcadas
 --
