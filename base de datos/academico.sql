@@ -6,6 +6,8 @@
 -- Tiempo de generación: 28-08-2015 a las 07:54:58
 -- Versión del servidor: 5.6.20
 -- Versión de PHP: 5.5.15
+CREATE database IF NOT EXISTS academico;
+use academico;
 
 SET SQL_MODE = "NO_AUTO_VALUE_ON_ZERO";
 SET time_zone = "+00:00";
